@@ -64,6 +64,10 @@ footer {
   display: inline-block;
 }
 
+.auth-icon {
+  margin-right: 10px;
+}
+
 /* =================HEADER================ */
 
 .logo {
@@ -150,20 +154,26 @@ footer {
   margin-right: 50px;
 }
 
-.auth-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
-}
-
 .auth-site.list {
   margin-left: auto;
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.auth-site .link:hover,
-.auth-site .link:focus {
+.auth-site .auth-block-link:hover,
+.auth-site .auth-block-link:focus {
   color: var(--accent-text-color);
+}
+
+.auth-block-link {
+  color: var(--title-text-color);
+}
+
+.auth-block-link:focus .auth-icon,
+.auth-block-link:hover .auth-icon {
+  color: var(--accent-text-color);
+  fill: var(--accent-text-color);
 }
 
 .nav {
@@ -172,14 +182,19 @@ footer {
 
 /* =====================HERO===================== */
 
-.hero {
+.section.hero {
   background-color: var(--hero-background-color);
   text-align: center;
-}
-
-.hero .container {
   color: var(--primary-white-color);
   margin-bottom: 94px;
+  background-image: url('/images/hero/studio-background.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.hero {
+  background: rgba(47, 48, 58, 0.4);
 }
 
 .hero-title {
@@ -194,6 +209,10 @@ footer {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.auth-block {
+  display: flex;
 }
 
 .button.primary {
@@ -221,6 +240,30 @@ footer {
 
 .advantage-image:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantage-icons {
+  display: flex;
+  justify-content: left;
+}
+
+.svg-icon {
+  width: 70px;
+  height: 70px;
+  padding: 25px 100px 25px 100px;
+}
+
+.container .advantage-icons {
+  margin-bottom: 30px;
+}
+
+.advantage-icons-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage-icons-list {
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
 }
 
 .section-title-image {
@@ -294,8 +337,7 @@ footer {
 .team {
   max-width: 270px;
   background-color: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
@@ -324,6 +366,84 @@ li.team > p {
   line-height: 0.84;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list.list {
+  padding: 0;
+}
+
+.social-list-link:focus,
+.social-list-link:hover {
+  background-color: var(--accent-text-color);
+}
+
+.social-list-link.link:focus .social-list-icon,
+.social-list-link.link:hover .social-list-icon {
+  fill: var(--primary-white-color);
+}
+
+/* ==================PARTNERS===================== */
+
+.partner-list {
+  display: flex;
+  justify-content: center;
+}
+
+.partner-list-icon {
+  width: 50px;
+  height: 50px;
+  fill: #afb1b8;
+}
+
+.partner-list-item {
+  padding: 20px 63px 20px 63px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.partner-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.partner-list-item:hover,
+.partner-list-item:focus {
+  color: var(--accent-text-color);
+}
+
+.section.section-partner-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-top: 94px;
+}
+
+.container.partners {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 /* ==================FOOTER======================== */
@@ -430,7 +550,7 @@ li.team > p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  padding -bottom: 20px;
+  padding-bottom: 20px;
   padding-left: 24px;
 }
 
@@ -443,8 +563,7 @@ li.team > p {
 }
 
 .project-list-info {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border-top: none;
   max-width: 370px;
