@@ -417,7 +417,6 @@ li.team > p {
 }
 
 .partner-list-item {
-  padding: 20px 63px 20px 63px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -444,6 +443,52 @@ li.team > p {
 .container.partners {
   margin-top: 94px;
   margin-bottom: 94px;
+}
+
+.partner-list-icon:hover,
+.partner-list-icon:focus {
+  fill: var(--accent-text-color);
+}
+
+.partner-list-item:hover,
+.partner-list-item:focus {
+  border-color: var(--accent-text-color);
+}
+
+#ya-co {
+  width: 44px;
+  height: 49px;
+  padding: 20px 63px 20px 63px;
+}
+
+#company-tagline-here {
+  width: 40px;
+  height: 52px;
+  padding: 19px 65px 19px 65px;
+}
+
+#company {
+  width: 41px;
+  height: 43px;
+  padding: 24px 64px 24px 64px;
+}
+
+#foster-peters {
+  width: 80px;
+  height: 42px;
+  padding: 24px 45px 24px 45px;
+}
+
+#brand {
+  width: 59px;
+  height: 47px;
+  padding: 22px 55px 22px 55px;
+}
+
+#company-tag-line {
+  width: 88px;
+  height: 45px;
+  padding: 22px 41px 22px 41px;
 }
 
 /* ==================FOOTER======================== */
@@ -562,7 +607,8 @@ li.team > p {
   margin: 0px;
 }
 
-.project-list-info {
+.project-list:hover,
+.project-list:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   border-top: none;
