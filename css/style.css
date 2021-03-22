@@ -535,7 +535,71 @@ li.team > p {
 .contacts .link:focus {
   color: var(--accent-text-color);
 }
+.footer .container {
+  display: flex;
+}
+.footer-list {
+  display: flex;
+}
 
+.footer-list-title {
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.footer-social {
+  margin-top: 72px;
+  margin-left: 70px;
+  margin-bottom: 100px;
+}
+
+.footer-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.footer-list-link:focus,
+.footer-list-link:hover {
+  background-color: var(--accent-text-color);
+}
+
+.footer-list-link.link:focus .footer-list-icon,
+.footer-list-link.link:hover .footer-list-icon {
+  fill: var(--primary-white-color);
+}
+
+.footer-list-link.link {
+  margin-right: 10px;
+}
+
+.logo.footer {
+  padding: 0;
+  margin-top: 60px;
+}
+
+.footer .container {
+  padding: 0;
+}
+
+.contacts.footer {
+  margin-bottom: 60px;
+}
 /* ======================PORTFOLIO======================= */
 
 .button-secondary {
