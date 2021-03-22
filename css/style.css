@@ -159,6 +159,7 @@ footer {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
 .auth-site .auth-block-link:hover,
@@ -189,8 +190,7 @@ footer {
   margin-bottom: 94px;
   background-image: url('/images/hero/studio-background.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .hero {
@@ -227,7 +227,7 @@ footer {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -686,6 +686,8 @@ li.team > p {
 .project-list {
   margin-top: 30px;
   margin-left: 30px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .ul-project {
